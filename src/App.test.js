@@ -1,9 +1,11 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import Grocery from "./components/Grocery";
-import Fridge from "./components/Fridge";
-import ShoppingCart from "./components/ShoppingCart";
+import {
+  Grocery,
+  Fridge,
+  ShoppingCart,
+} from './App';
 
 describe("Grocery", () => {
   test("should render an empty string if no props are passed", () => {
@@ -25,7 +27,7 @@ describe("Grocery", () => {
 
 describe('Fridge', () => {
   test('should render a fridge component that contains 3 groceries: milk, butter, eggs', () => {
-    const { getByText, container } = render(<Fridge />);
+    const { getByText, container } = render(<Fridge groceries={['milk','butter','eggs']}/>);
     const milk = getByText(/milk/i).textContent;
     const butter = getByText(/butter/i).textContent;
     const eggs = getByText(/eggs/i).textContent;
