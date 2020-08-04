@@ -2,6 +2,7 @@
     "name": "project",
     "version": "0.1.0",
     "private": true,
+    "engines": { "node": ">=10.19.0" },
     "dependencies": {
         "cross-env": "^7.0.2",
         "prop-types": "^15.6.2",
