@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 
-const Fridge = () => <div />;
+const Fridge = () => {
+  return (
+    <div></div>
+  )
+};
 
 const Grocery = () => <span />;
 
@@ -9,7 +13,11 @@ const ShoppingCart = () => <div />;
 class App extends Component {
   render() {
     return (
-      <div></div>
+      <div>
+        Add a Grocery <br />
+        Add a Fridge <br />
+        Add a Shopping Cart  <br />
+      </div>
     );
   }
 }
