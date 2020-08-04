@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Grocery = () => <div />;
+const Grocery = () => <span />;
 
 export default Grocery;
