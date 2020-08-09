@@ -13,7 +13,7 @@
     "scripts": {
         "start": "cross-env HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
         "pretest": "npm install",
-        "test": "rm -rf junit.xml && react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit",
+        "test": "npx check-engines && rm -rf junit.xml && react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit",
         "test:watch": "react-scripts test --watch --env=jsdom"
     },
     "devDependencies": {
@@ -26,6 +26,9 @@
         "jest-junit": "^3.3.0",
         "prettier": "^2.0.5",
         "react-test-renderer": "^16.2.0"
+    },
+    "engines": {
+        "node": "8"
     },
     "browserslist": {
         "production": [
