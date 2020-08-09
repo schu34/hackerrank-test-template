@@ -4,5 +4,9 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+/**********************************************
+ *           DON'T TOUCH THIS FILE
+ **********************************************/
+
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
